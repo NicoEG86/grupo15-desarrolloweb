@@ -1,0 +1,61 @@
+.contenedor-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:whitesmoke; 
+}
+
+.contenedor-flex > div{
+    margin: 10px;
+    padding: 10px;
+
+}
+
+img{
+    max-width: 100%;
+    height: auto;  
+    
+}
+
+h1{
+    text-align: center;
+}
+
+.contenedor-producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:whitesmoke;
+    margin: 100px;
+    padding: 10px;
+    gap: 20px;
+}
+
+
+
+div.gallery {
+    margin: 50px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    
+}
+  
+div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+div.desc {
+    padding: 15px;
+   
+  }
+
+  h4{
+    text-align: center;
+  }
+  
