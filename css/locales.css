@@ -41,15 +41,6 @@
 }
 
 @media only screen and (max-width: 600px){
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-    .navegador li{
-        display: block;
-        margin-bottom: .625rem;
-    }
-
     .container{
         grid-template-columns: 1fr;
     }
