@@ -12,7 +12,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: black;  
-    padding: 20px;
+    padding: 1.25rem;
     color:white;
 }
 
@@ -28,13 +28,13 @@ header .logo img{
     color: white;
     cursor: pointer;
 }
-  
+
 .iconos {
     display: flex;
 }
   
 .iconos a{
-    margin-right: .625rem;
+    margin-right: 1rem;
 }
   
 .navegador{
@@ -48,13 +48,13 @@ header .logo img{
   
 li a{
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: white;
     transition: 1s;
 }
   
 li a:hover{
-      color: rgb(246, 37, 26);
+      color: rgb(88, 239, 173);
 }
 
 .footer{
@@ -64,8 +64,9 @@ li a:hover{
     background-color: black;
     color: white;
     width: 100%;
-    height: 190px;
-    padding: 20px;
+    height: 11.875rem;
+    padding: 1.25rem;
+    text-align: center;
 }
 
 .home a {
@@ -75,21 +76,84 @@ li a:hover{
 }
 
 .home a:hover{
-    color: rgb(246, 37, 26);
+    color: rgb(88, 239, 173);
 }
 
 .contacto{
-    font-size: 14px;
     text-align: center;
 }
 
 .contacto h4{
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .whatsapp a{
     position:fixed;
-    bottom:30px; 
-    right:30px;
+    bottom: 2rem; 
+    right: 2rem;
 }
+
+@media only screen and (max-width: 768px){
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: .625rem;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    .iconos {
+        margin-top: .625rem;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: .625rem;
+    }
+
+    .navegador li {
+        margin-right: 0;
+        margin-bottom: .3125rem;
+    }
+
+    .footer {
+        padding: .625rem;
+    }
+
+    .contacto, .home, .iconos, .whatsapp {
+        margin-bottom: .625rem;
+    }
+}
+
       
