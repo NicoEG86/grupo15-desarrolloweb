@@ -13,9 +13,12 @@
   <header>
     <div class="logo"><img src="imagenes/logoEnPng.png" width="150" alt="Logo" class="Logo">
     </div>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <i class="fa fa-bars fa-2x"></i>
+    </button>
     <nav>
        <ul class="navegador">
-         <li><a href="indexOptica.html">Inicio</a></li>
+         <li><a href="index.html">Inicio</a></li>
          <li><a href="Locales.html">Locales</a></li>
          <li><a href="Productos.html">Productos</a></li>
          <li><a href="Contacto.html">Contacto</a></li>
@@ -100,11 +103,21 @@
       <p>TEL: 011 15 501732</p>
      </div>   
      <div class="home">
-      <p><a href="indexOptica.html">Volver al inicio</a></p>
+      <p><a href="index.html">Volver al inicio</a></p>
      </div>
      <div class="whatsapp">
       <a href="https://wa.me/541136636859?text=Envíanos un Whatsapp"><img src="imagenes/whatsapplogo-icono.png" width="60" alt=""></a>
      </div>
   </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('active');
+        });
+    });
+  </script>
 </body>
 </html>

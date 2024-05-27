@@ -1,6 +1,17 @@
-h2{
+.quienesSomos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin: 3.5rem 2.5rem 2.5rem;
+}
+  
+.descripcion{
+    padding: .625rem;
+}
+  
+.quienesSomos h1{
     text-align: center;
-    margin: 50px;
+    margin: 1.25rem;
 }
 
 .container{
@@ -8,22 +19,36 @@ h2{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     place-content: center;
-    gap: 25px;
-    margin: 20px 60px;
+    gap: 1.5625rem;
+    margin: 3.5rem 4.5rem 4.5rem;
 }
 
 .map-section{
     display: grid;
     place-items: center;
-    border: 2px solid grey;
+    border: 2px solid rgb(152, 152, 152);
+    border-radius: .9375rem;
 }
 
 .map-section h3{
-    margin: 20px;
+    margin: 1.25rem;
 }
 
 .map-section p{
-    margin: 5px;
+    margin: .3125rem;
     line-height: 1.5;
 
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .map-section {
+        display: block;
+        width: 100%;
+    }
+    body{
+        font-size: small;
+    }
 }
