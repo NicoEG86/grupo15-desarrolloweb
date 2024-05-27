@@ -1,16 +1,15 @@
 .portada img{
     width: 100%;
     height: auto;
-    max-height: 70vh;
 }
 
 .horarios{
     text-align: center;
-    margin: 3rem;
+    margin: 48px;
 }
 
 .horarios h2{
-    margin: 2rem;
+      margin:16px;
 }
 
 .main{
@@ -18,19 +17,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap:1.875rem;
-    width: 80vw;
+    gap:30px;
+    width: 90vw;
     height: 100vh;
     margin: auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 48px;
+    margin-bottom: 48px;
     }
 
 .section{
     display: grid;
     place-items: center;
-    width: auto;
-    height: auto;
     }
 
 .section img{
@@ -38,21 +35,18 @@
     }
 
 .section h3 {
-    margin: 1.25rem; 
     text-align: center;
 }
 
 .section p {
-    padding: .625rem;
-    font-size: 1rem; 
-    line-height: 1.5;
+    padding-bottom: .625rem;
     text-align: center; 
 } 
 
 .contenido{
     display: flex;
     justify-content: center;
-    margin: .9375rem 2.5rem 1.875rem;
+    margin: 15px 40px 30px;
     text-align: center;    
 } 
 
@@ -60,20 +54,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3.125rem;
+    margin: 50px;
 }
 
 .menuNav img, h4{
-    margin: .625rem;
+    margin: 10px;
 }
 
 .menuNav button{
-    border-radius: 1rem;
+    border-radius: 16px;
     background-color: grey;
     border: none;
     cursor: pointer;
-    padding: .625rem;
-    margin: .625rem;    
+    padding: 10px;
+    margin: 10px;    
 }
 
 .menuNav button:hover{
@@ -82,6 +76,51 @@
 
 .menuNav a{
     text-decoration: none; 
-    font-size: .9375rem;
+    font-size: 15px;
     color: white;
+}
+
+@media (max-width: 48rem){
+    .main{
+        grid-template-columns: 1fr;
+        gap: .625rem;
+    }
+
+    .section img{
+        display:none;
+    }
+
+    .contenido{
+        flex-direction: column;
+    }
+    .menuNav{
+        width: 100%;
+    }
+}
+
+@media (max-width: 30rem){
+    .portada img, .section img, .menuNav img {
+        width: 100%;
+        height: auto;
+    } 
+    .main{
+        grid-template-columns: 1fr;
+        margin:0;
+        gap: .625rem;
+    }
+
+    .section{
+        padding: 0;
+    }
+
+    .section img{
+        display:none;
+    }
+
+    .contenido{
+        flex-direction: column;
+    }
+    .menuNav{
+        width: 100%;
+    }
 }
