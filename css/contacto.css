@@ -1,0 +1,131 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.contenedor-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.contenedor-flex > div{
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.form-content {
+width: 100%;
+max-width: 31.25rem;
+background-color: rgb(38, 38, 38);
+padding: 3.125rem 3.75rem 4.375rem;
+text-align: center;
+border-radius: 25px;
+}
+
+.form-content h1 {
+    margin-top: 1.5rem;
+    font-size: 1.875rem;
+    margin-bottom: 1.5rem;
+    color: whitesmoke;
+    position: relative;
+}
+
+.input-field {
+    background-color: black;
+    margin: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+
+input {
+    width: 100;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    padding: 18px 15px;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+.input-field i{
+    margin-left: 15px;
+    color: green;
+}
+
+form p {
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 0.8125rem;
+}
+
+form span {
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 0.8125rem;
+    margin-left: 0.9375rem;
+}
+
+form select {
+    background-color: #778899;
+    width: 75%;
+    height: 3em;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+form label {
+    color: whitesmoke;
+}
+
+#mensaje {
+    background-color: black;
+    width: 75%;
+    color: #FFFFFF;
+    font-size: 1.125rem;
+    margin: 1rem; 
+}
+
+#respuesta {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+form p a {
+    color: green;
+    margin-left: 3.125rem;
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-field button {
+    flex-basis: 48%;
+    font-size: 1rem;
+    background-color: green;
+    color: #FFFFFF;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: 0;
+    margin: 20px;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.input-group {
+    height: 75%;
+} 
