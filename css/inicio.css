@@ -1,0 +1,83 @@
+.portada img{
+    width: 100%;
+    height: auto;
+}
+
+.horarios{
+    text-align: center;
+    margin: 2.25rem;
+}
+
+.horarios h2{
+    margin: 2rem;
+}
+
+.main{
+    background-color: rgb(227, 226, 226);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:25px;
+    place-content: center;
+    height: 100vh;
+    margin: 1.25rem 2.5rem;
+    }
+
+.section{
+    display: grid;
+    place-items: center;
+    padding: .625rem 1.25rem;
+    }
+
+.section img{
+    border-radius: 50%;
+    margin: 1.25rem;
+    }
+
+.section h2 {
+    font-size: 20px;
+    margin: 1.25rem; 
+    text-align: center;
+}
+
+.section p {
+    margin: .3125rem;
+    font-size: 16px; 
+    line-height: 1.5; 
+} 
+
+.contenido{
+    display: flex;
+    justify-content: center;
+    margin: .9375rem 2.5rem 1.875rem;    
+} 
+
+.menuNav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3.125rem;
+}
+
+.menuNav img, h4{
+    margin: .625rem;
+}
+
+.menuNav button{
+    border-radius: 1rem;
+    background-color: grey;
+    border: none;
+    cursor: pointer;
+    padding: .625rem;
+    margin: .625rem;    
+}
+
+.menuNav button:hover{
+    background-color:rgb(54, 53, 53);
+}
+
+.menuNav a{
+    text-decoration: none; 
+    font-size: 15px;
+    color: white;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripcion" content="Optica Herense es una empresa argentina dedicada a la venta de productos ópticos de la más alta calidad e innovación">
+    <meta name="author" content="Optica Herense">
+    <meta name="keywords" content="óptica, contactología, anteojos">
+    <script src="https://kit.fontawesome.com/ac3394bc67.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilosGlobal.css">
+    <link rel="icon" href="imagenes/OPTICA.ico">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/contacto.css">    
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="imagenes/logoEnPng.png" width="150" alt="Logo" class="Logo"></div>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <i class="fa fa-bars fa-2x"></i>
+        </button>
+        <nav>
+          <ul class="navegador">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Locales.html">Locales</a></li>
+            <li><a href="Productos.html">Productos</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="iconos">
+          <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+        </div> 
+    </header>
+        <main>
+        <div class="contenedor-flex">
+           <!-- <div class="container">-->        
+            <div class="form-content">
+                <h1 id="title">Contáctese con nosotros</h1>
+                <form id="form"> <!--action="URL a donde se envian los datos cargados en el formulario"-->
+                    <div class="input-group">
+                        <div class="input-field">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <input type="text" placeholder="Nombre" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="input-field">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <input type="text" placeholder="Apellido" id="apellido" name="apellido" required>
+                        </div>
+                        <div class="input-field">
+                            <i class="fa-solid fa-id-card"></i>
+                            <input type="text" placeholder="DNI" id="dni" name="dni" required>
+                        </div>                    
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="text" placeholder="e-mail" id="email" name="e-mail" required>
+                        </div>
+                        <div class="input-field">
+                            <i class="fa-solid fa-phone"></i>                                
+                            <input type="text" placeholder="Teléfono" id="telefono" name="teléfono" required>
+                        </div>                        
+                        <div class="input-field">
+                            <label for="consulta">Consulta sobre:</label>
+                            <select name="consulta" id="consulta">
+                            <option value="0">Seleccionar...</option>
+                            <option value="1">Anteojos de sol</option>
+                            <option value="2">Lentes de contacto</option>
+                            <option value="3">Anteojos recetados</option>
+                            <option value="4">Armazones</option>
+                            <option value="5">Otra consulta</option>
+                            </select>  
+                        </div>
+                        <div class="input-field">
+                            <i class="fa-solid fa-comment"></i>
+                            <label for="mensaje">Mensaje</label>
+                            <textarea name="mensaje" placeholder="Escriba su mensaje..." id="mensaje" rows="5"></textarea>
+                        </div>
+                        <div>
+                        <input type="checkbox" name="info" id="info">
+                        <label for="info"><span>Me gustaría recibir información sobre productos y ofertas</span></label><!--uso span porque es inline-->
+                        </div>
+                        <p id="respuesta"></p>                                    
+                    </div>
+                    <div class="btn-field">
+                        <button id="Enviar" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div> 
+        </div>        
+    </main>
+    <footer class="footer">
+        <div class="logo">
+         <img src="imagenes/logoEnPng.png" width="100" alt="Logo">
+        </div>
+        <div class="iconos">
+         <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+         <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+        </div>
+        <div class="contacto">
+         <h4>La vida a traves de tus ojos</h4>
+         <br>
+         <p><strong>Contacto</strong></p>
+         <br>
+         <p>AV. VILLAMAYOR 401</p>
+         <br>
+         <p>GRAL. LAS HERAS</p>
+         <br>
+         <p>TEL: 011 15 501732</p>
+        </div>   
+        <div class="home">
+         <p><a href="index.html">Volver al inicio</a></p>
+        </div>
+        <div class="whatsapp">
+         <a href="https://wa.me/541136636859?text=Envíanos%20un%20Whatsapp"><img src="imagenes/whatsapplogo-icono.png" width="60" alt=""></a>
+        </div>
+    </footer>
+    <script src="JS/contacto.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('nav');
+    
+            menuToggle.addEventListener('click', function() {
+                nav.classList.toggle('active');
+            });
+        });
+    </script>     
+</body>
+</html>

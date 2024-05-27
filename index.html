@@ -3,31 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripcion" content="Optica Herense es una empresa argentina dedicada a la venta de productos ópticos de la más alta calidad e innovación">
+    <meta name="author" content="Optica Herense">
+    <meta name="keywords" content="óptica, contactología, anteojos">
     <script src="https://kit.fontawesome.com/ac3394bc67.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilosGlobal.css">
-    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/inicio.css">    
     <link rel="icon" href="imagenes/OPTICA.ico">
     <title>Optica Herense</title>
 </head>
 <body>
   <header>
-    <div class="logo"><img src="imagenes/logoEnPng.png" width="150" alt="Logo" class="Logo">
-    </div>
+    <div class="logo"><img src="imagenes/logoEnPng.png" width="150" alt="Logo" class="Logo"></div>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <i class="fa fa-bars fa-2x"></i>
+    </button>
     <nav>
+<<<<<<< HEAD
        <ul class="navegador">
          <li><a href="index.html">Inicio</a></li>
          <li><a href="Locales.html">Locales</a></li>
          <li><a href="Productos.html">Productos</a></li>
          <li><a href="Contacto.html">Contacto</a></li>
        </ul>
+=======
+      <ul class="navegador">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Locales.html">Locales</a></li>
+        <li><a href="Productos.html">Productos</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+>>>>>>> e42a78fa0829906837595aa493c2b55b317f177b
     </nav>
     <div class="iconos">
       <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a>
       <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
     </div> 
-  </header> 
+  </header>     
   <div class="portada">
-    <img src="imagenes/portadaimagen.png" alt="imagen de portada">
+    <img src="imagenes/portadaimagen.png" width="100" alt="imagen de portada">
   </div>
   <div class="horarios">
     <h2>Nuestro horario de atención</h2>
@@ -93,7 +107,7 @@
       <br>
       <p><strong>Contacto</strong></p>
       <br>
-      <p>AV. VILLA MAYOR 401.</p>
+      <p>AV. VILLAMAYOR 401</p>
       <br>
       <p>GRAL. LAS HERAS</p>
       <br>
@@ -103,8 +117,18 @@
       <p><a href="index.html">Volver al inicio</a></p>
      </div>
      <div class="whatsapp">
-      <a href="https://wa.me/541136636859?text=Envíanos un Whatsapp"><img src="imagenes/whatsapplogo-icono.png" width="60" alt=""></a>
+      <a href="https://wa.me/541136636859?text=Envíanos%20un%20Whatsapp"><img src="imagenes/whatsapplogo-icono.png" width="60" alt=""></a>
      </div>
   </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('active');
+        });
+    });
+  </script>
 </body>
 </html>
